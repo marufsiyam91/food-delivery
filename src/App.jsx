@@ -1,11 +1,14 @@
-import MainLayout from "./Layout/MainLayout"
+import Navbar from "./Components/Navbar"
+import Home from "./Pages/Home"
+
 
 
 function App() {
 
   return (
     <>
-      <MainLayout/>
+      <Navbar/>
+      <Home/>
     </>
   )
 }

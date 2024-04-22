@@ -1,6 +1,4 @@
-
-import { assets } from './../assets/assets';
-import { NavLink } from 'react-router-dom';
+import { assets } from '../assets/assets';
 
 const Navbar = () => {
   return (
@@ -10,8 +8,8 @@ const Navbar = () => {
         <ul className='flex items-center gap-8'>
           <li className='font-primary font-medium text-lg cursor-pointer'>Home</li>
           <li className='font-primary font-medium text-lg cursor-pointer'> Menu </li>
-          <li className='font-primary font-medium text-lg cursor-pointer'> Mobile-App</li>
-          <li className='font-primary font-medium text-lg cursor-pointer'> Contact us</li>
+          <li className='font-primary font-medium text-lg cursor-pointer'> Mobile App</li>
+          <li className='font-primary font-medium text-lg cursor-pointer'>Contact Us</li>
         </ul>
       </div>
       <div className='hidden lg:flex items-center gap-10'>
