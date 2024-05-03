@@ -4,12 +4,12 @@ import { assets } from '../assets/assets';
 const Navbar = () => {
   return (
     <nav className='flex h-20 items-center justify-start lg:justify-around'>
-      <h2 className="font-cursive text-orange-500 font-semibold text-4xl">Foodies central</h2>
+      <h2 className="font-cursive text-orange-500 font-semibold text-4xl"><NavLink to={'/'}>Foodies central</NavLink></h2>
       <div className='hidden lg:block'>
         <ul className='flex items-center gap-8'>
           <li className='font-primary font-medium text-lg cursor-pointer'><NavLink to={'/'}>Home</NavLink></li>
-          <li className='font-primary font-medium text-lg cursor-pointer'> <NavLink to={'/'}>Menu</NavLink></li>
-          <li className='font-primary font-medium text-lg cursor-pointer'><NavLink to={'/'}>Mobile App</NavLink></li>
+          <li className='font-primary font-medium text-lg cursor-pointer'> <NavLink to={'/cart'}>Menu</NavLink></li>
+          <li className='font-primary font-medium text-lg cursor-pointer'><NavLink to={'/place_order'}>Mobile App</NavLink></li>
           <li className='font-primary font-medium text-lg cursor-pointer'><NavLink to={'/'}>Contact Us</NavLink></li>
         </ul>
       </div>

@@ -5,17 +5,29 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
+      },
+
+      animation: {
+        'FadeIn': 'fadeIn 3s',
+      }
+    },
 
     fontFamily:{
       primary: ['Quicksand', 'sans-serif'],
-      cursive: [ 'Caveat', 'cursive']
+      cursive: [ 'Caveat', 'cursive'],
+      urbanist: ['Urbanist', 'sans-serif']
     },
 
     screens: {
       'esm': '500px',
 
-      'sm': '600px',
+      'sm': '640px',
 
       'md': '768px',
 
