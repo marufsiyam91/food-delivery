@@ -3,10 +3,9 @@ import { menu_list } from "../assets/assets";
 import { FoodieContext } from "../Contexts/FoodieContext";
 
 
-const ExploreMenu = () => {
+const ExploreMenu = ({category, setCategory}) => {
 
-    const {state: {category}, dispatch} = useContext(FoodieContext);
-    console.log(category)
+
 
   return (
     <div className="flex flex-col gap-6 p-8">
@@ -24,7 +23,8 @@ const ExploreMenu = () => {
             menu_list.map((item, index) => {
                 return (
                     <div key={index}>
-                        <img onClick={() => dispatch({type: 'active_menu', payload: category === item.menu_name ? 'Alll' : item.menu_name})} src={item.menu_image} alt="" />
+                        <img className="max-w-28 rounded-full transition duration-300"
+          id={item.menu_name === category ? "activeMenu" : ""} onClick={() => setCategory(prevState => category === item.menu_name ? 'all' : item.menu_name)} src={item.menu_image} alt="" />
                         <p>{item.menu_name}</p>
                     </div>
                 )
