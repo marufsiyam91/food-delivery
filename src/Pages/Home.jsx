@@ -11,7 +11,7 @@ const Home = () => {
 
 
   return (
-    <main className='p-8'>
+    <main className='p-8 max-w-screen-4xl mx-auto'>
       <Hero/>
       <ExploreMenu category={category} setCategory={setCategory}/>
       <FoodItems category={category}/>
