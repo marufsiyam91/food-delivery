@@ -14,7 +14,7 @@ const Home = () => {
     <main className='p-8'>
       <Hero/>
       <ExploreMenu category={category} setCategory={setCategory}/>
-      <FoodItems/>
+      <FoodItems category={category}/>
     </main>
   )
 }
