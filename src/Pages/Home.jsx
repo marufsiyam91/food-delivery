@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ExploreMenu from '../Components/ExploreMenu';
 import FoodItems from '../Components/FoodItems';
 import Hero from './../Components/Hero';
+import AppDownload from '../Components/AppDownload';
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero/>
       <ExploreMenu category={category} setCategory={setCategory}/>
       <FoodItems category={category}/>
+      <AppDownload/>
     </main>
   )
 }
