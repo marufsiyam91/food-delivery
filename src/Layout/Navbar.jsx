@@ -3,7 +3,7 @@ import { assets } from '../assets/assets';
 
 const Navbar = () => {
   return (
-    <nav className='flex h-20 items-center justify-start lg:justify-around max-w-screen-4xl mx-auto'>
+    <nav className='flex h-20 items-center justify-start lg:justify-around max-w-screen-4xl mx-auto px-8'>
       <h2 className="font-cursive text-orange-500 font-semibold text-4xl"><NavLink to={'/'}>Foodies central</NavLink></h2>
       <div className='hidden lg:block'>
         <ul className='flex items-center gap-8'>
