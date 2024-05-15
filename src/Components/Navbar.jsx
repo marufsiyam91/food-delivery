@@ -1,6 +1,11 @@
+
 import { assets } from '../assets/assets';
 
 const Navbar = () => {
+
+
+
+
   return (
     <nav className='flex h-20 items-center justify-start lg:justify-around'>
       <h2 className="font-cursive text-orange-500 font-semibold text-4xl">Foodies central</h2>

@@ -40,5 +40,7 @@ export default {
       '4xl': '1444px'
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

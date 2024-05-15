@@ -26,3 +26,8 @@ a{
 .xscrollbar::-webkit-scrollbar{
   display: none;
 }
+
+
+a.active{
+  color: #EA6D17;
+}
