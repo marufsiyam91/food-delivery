@@ -1,6 +1,5 @@
-import { useContext } from "react";
+
 import { menu_list } from "../assets/assets";
-import { FoodieContext } from "../Contexts/FoodieContext";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (

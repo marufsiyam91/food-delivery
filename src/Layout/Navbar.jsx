@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showPopup, setShowPopup] = useState(false)
 
   return (
-    <nav className="flex h-20 items-center justify-between lg:justify-around max-w-screen-4xl mx-auto px-8 lg:px-4">
+    <nav className="flex h-20 items-center justify-between max-w-screen-4xl mx-auto px-8 ">
       {
         showPopup &&
         <LoginPopup setShowPopup={setShowPopup}/>
@@ -24,10 +24,6 @@ const Navbar = () => {
               <NavLink to={"/"}>Home</NavLink>
             </li>
             <li className="font-primary text-md 2xl:text-lg font-medium text-slate-700 cursor-pointer">
-              {" "}
-              <NavLink to={"/cart"}>Menu</NavLink>
-            </li>
-            <li className="font-primary text-md 2xl:text-lg font-medium text-slate-700 cursor-pointer">
               <NavLink to={"/place_order"}>Mobile App</NavLink>
             </li>
             <li className="font-primary text-md 2xl:text-lg font-medium text-slate-700 cursor-pointer">
@@ -38,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6 lg:gap-10">
           <img src={assets.search_icon} alt="" />
           <div className="relative">
-            <img src={assets.basket_icon} alt="" />
+            <NavLink to={'/cart'}><img src={assets.basket_icon} alt="" /></NavLink>
             <div className="absolute w-3 h-3 rounded-full bg-orange-500 border border-orange-800 top-[-8px] right-[-8px]"></div>
           </div>
           <button onClick={() => setShowPopup(prevState => !prevState)} className="border hover:bg-orange-50 transition duration-300 border-orange-500 py-2 px-6 rounded-lg font-primary font-semibold">

@@ -16,14 +16,14 @@ const reducer = (state, action) => {
             ...state,
             category: action.payload
         }
-    case 'addItems':
-      return {
-        ...state,
-        cartItems: {
-          ...state.cartItems,
-          [action.payload]: (state.cartItems[action.payload] || 0) + 1,
-        },
-      };
+      case 'addItems':
+        return {
+          ...state,
+          cartItems: {
+            ...state.cartItems,
+            [action.payload]: (state.cartItems[action.payload] || 0) + 1,
+          },
+        };
     case 'removeItem':
       return {
         ...state,
