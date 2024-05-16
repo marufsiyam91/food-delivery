@@ -1,4 +1,4 @@
-import { createContext, useReducer,  } from "react";
+import { createContext, useReducer, } from "react";
 import { food_list } from "../assets/assets";
 
 export const FoodieContext = createContext(null);
@@ -6,8 +6,10 @@ export const FoodieContext = createContext(null);
 const initialValue = {
   category: 'Alll',  
   food_list,
-  cartItems: {}
+  cartItems: {},
 };
+
+
 
 const reducer = (state, action) => {
   switch (action.type) {
