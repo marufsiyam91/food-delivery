@@ -5,19 +5,10 @@ const Cart = () => {
   const {
     state: { cartItems, food_list },
     dispatch,
+    totalAmount,
   } = useContext(FoodieContext);
 
-  const totalAmount = () => {
-    let total = 0
-    for(let item in cartItems){
-      if(cartItems[item] > 0){
-        let itemInfo = food_list.find((product) => product._id == item)
 
-        total += itemInfo.price * item
-      }
-    }
-    return total
-  }
 
   return (
     <div className="max-w-screen-4xl mx-auto">
