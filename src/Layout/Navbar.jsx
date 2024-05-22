@@ -28,7 +28,7 @@ const Navbar = () => {
               <NavLink to={"/"}>Home</NavLink>
             </li>
             <li className="font-primary text-md 2xl:text-lg font-medium text-slate-700 cursor-pointer">
-              <NavLink to={"/place_order"}>Mobile App</NavLink>
+              <NavLink to={"/place_order"}>Place order</NavLink>
             </li>
             <li className="font-primary text-md 2xl:text-lg font-medium text-slate-700 cursor-pointer">
               <NavLink to={"/contact"}>Contact Us</NavLink>

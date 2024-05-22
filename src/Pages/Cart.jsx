@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { FoodieContext } from "../Contexts/FoodieContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const {
@@ -7,6 +8,8 @@ const Cart = () => {
     dispatch,
     totalAmount,
   } = useContext(FoodieContext);
+
+  const navigate = useNavigate()
 
 
 
@@ -65,7 +68,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <button className="py-3 px-8  bg-orange-600 text-white font-semibold rounded-md mt-6">PROCEED TO CHECKOUT</button>
+          <button onClick={() => navigate('/place_order')} className="py-3 px-8  bg-orange-600 text-white font-semibold rounded-md mt-6">PROCEED TO CHECKOUT</button>
         </div>
 
         <div className="w-1/2 flex justify-center">
