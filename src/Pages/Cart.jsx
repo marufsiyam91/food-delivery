@@ -14,7 +14,7 @@ const Cart = () => {
 
 
   return (
-    <div className="max-w-screen-4xl mx-auto">
+    <div className="max-w-screen-4xl mx-auto py-20">
       <div className="grid grid-cols-6 w-full col-span-1 col-span-1.5 col-span-1 col-span-1 col-span-1 col-span-0.5">
         <p>Items</p>
         <p>Title</p>
@@ -52,19 +52,19 @@ const Cart = () => {
 
       <div className="w-full flex py-12">
         <div className="w-1/2">
-          <h3 className="text-2xl font-semibold font-urbanist">Cart Total</h3>
-          <div className="flex flex-col gap-2">
-            <div className="flex justify-between border-b">
+          <h3 className="text-2xl font-semibold font-urbanist mb-4">Cart Total</h3>
+          <div className="flex flex-col">
+            <div className="flex justify-between border-b py-2">
               <p>Subtotal</p>
-              <p>{totalAmount()}</p>
+              <p>$ {totalAmount()}</p>
             </div>
-            <div className="flex justify-between border-b">
+            <div className="flex justify-between border-b py-2">
               <p>Delivery fee</p>
-              <p>2</p>
+              <p>$ {totalAmount() === 0 ? 0 : 2}</p>
             </div>
-            <div className="flex justify-between ">
+            <div className="flex justify-between py-2">
               <p className="text-xl font-semibold">Total</p>
-              <p className="text-xl font-semibold">{totalAmount() + 2}</p>
+              <p className="text-xl font-semibold">$ {totalAmount() === 0 ? 0 : totalAmount() + 2}</p>
             </div>
           </div>
 

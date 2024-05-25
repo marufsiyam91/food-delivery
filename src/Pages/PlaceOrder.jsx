@@ -33,18 +33,18 @@ const PlaceOrder = () => {
       <div className="basis-1/2 w-full flex justify-end">
           <div className="w-2/3 ">
             <h3 className="text-2xl font-semibold font-urbanist mb-6">Cart Total</h3>
-              <div className="flex flex-col gap-2">
-                <div className="flex justify-between border-b">
+              <div className="flex flex-col">
+                <div className="flex justify-between border-b py-2 ">
                   <p>Subtotal</p>
                   <p>$ {totalAmount()}</p>
                 </div>
-                <div className="flex justify-between border-b">
+                <div className="flex justify-between border-b py-2">
                   <p>Delivery fee</p>
-                  <p>$ 2</p>
+                  <p>$ {totalAmount() === 0 ? 0 : 2}</p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between py-2 ">
                   <p className="text-xl font-semibold">Total</p>
-                  <p className="text-xl font-semibold">$ {totalAmount() + 2}</p>
+                  <p className="text-xl font-semibold">$ {totalAmount() === 0 ? 0 : totalAmount() + 2}</p>
                 </div>
               </div>
 
